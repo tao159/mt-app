@@ -51,7 +51,7 @@ async function start() {
     } = nuxt.options.server
 
     //路由
-    app.use(users.routes()).use(user.allowedMethods())
+    app.use(users.routes()).use(users.allowedMethods())
 
     // Build in development
     if (config.dev) {
